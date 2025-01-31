@@ -40,3 +40,16 @@ Paper: https://arxiv.org/abs/2411.00348
     ```bash
     python run.py --model_name {model} --test_query "{query you want to test}"
     ```
+
+### Citation
+```
+@misc{hung2024attentiontrackerdetectingprompt,
+      title={Attention Tracker: Detecting Prompt Injection Attacks in LLMs}, 
+      author={Kuo-Han Hung and Ching-Yun Ko and Ambrish Rawat and I-Hsin Chung and Winston H. Hsu and Pin-Yu Chen},
+      year={2024},
+      eprint={2411.00348},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      url={https://arxiv.org/abs/2411.00348}, 
+}
+```
