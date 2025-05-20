@@ -40,10 +40,6 @@ def get_binary_label(data_item, dataset_name_str):
         if isinstance(label_value, bool):  # Handle boolean labels
             return 1 if label_value else 0
 
-        # For nicholasKluge/AIGC-Prompt-Injection-Detection-Dataset
-        if dataset_name_str.startswith("nicholasKluge/AIGC-Prompt-Injection-Detection-Dataset"):
-            if isinstance(label_value, (int, float)) and label_value in [0, 1]:
-                return int(label_value)
 
     # Dataset-specific label column checks
     if dataset_name_str.startswith("allenai/WildJailbreak"):
@@ -186,10 +182,6 @@ def main(args):
         raw_score = details_dict.get('focus_score', 0.5)
         attack_probability_score = 1 - raw_score
 
-        # Assuming 'model_generated_text' is a key in details_dict
-        # If not, this will default to "N/A". You'll need to ensure your detector provides this.
-        model_generated_text = details_dict.get('model_generated_text', "N/A (not provided by detector)")
-
         binary_label = get_binary_label(data_item, args.dataset_name)
 
         if binary_label is None:
@@ -201,7 +193,6 @@ def main(args):
 
         log_entry = {
             "input_text": text_input,
-            "model_generated_text": model_generated_text,
             "extracted_binary_label": binary_label if binary_label is not None else "N/A",
             "detected_as_attack": detect_flag,
             "attack_probability_score": attack_probability_score,
