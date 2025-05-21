@@ -1,0 +1,6 @@
+{"model": "granite3_8b-attn", "dataset_spec": "deepset/prompt-injections", "seed": 42, "auc": 0.996, "auprc": 0.996, "fnr": 0.0, "fpr": 0.696, "valid_labels_count": 116, "processed_item_count": 116}
+{"model": "llama3_8b-attn", "dataset_spec": "deepset/prompt-injections", "seed": 42, "auc": 0.986, "auprc": 0.988, "fnr": 0.0, "fpr": 1.0, "valid_labels_count": 116, "processed_item_count": 116}
+{"model": "phi3-attn", "dataset_spec": "deepset/prompt-injections", "seed": 42, "auc": 0.971, "auprc": 0.976, "fnr": 0.0, "fpr": 0.661, "valid_labels_count": 116, "processed_item_count": 116}
+{"model": "qwen2-attn", "dataset_spec": "deepset/prompt-injections", "seed": 42, "auc": 0.979, "auprc": 0.983, "fnr": 0.0, "fpr": 0.786, "valid_labels_count": 116, "processed_item_count": 116}
+{"model": "mistral_7b-attn", "dataset_spec": "deepset/prompt-injections", "seed": 42, "auc": 0.986, "auprc": 0.989, "fnr": 0.017, "fpr": 0.286, "valid_labels_count": 116, "processed_item_count": 116}
+{"model": "gemma2_9b-attn", "dataset_spec": "deepset/prompt-injections", "seed": 42, "auc": 0.986, "auprc": 0.988, "fnr": 0.0, "fpr": 0.464, "valid_labels_count": 116, "processed_item_count": 116}
